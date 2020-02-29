@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#75B1F3 "
+    android:background="#FFC038"
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:id="@+id/drawer_layout"
@@ -52,7 +52,7 @@
                     android:gravity="center"
                     android:text="SELECT YOUR SPACE"
                     android:textAlignment="center"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#000"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -71,7 +71,8 @@
 
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/aktu"
+                    android:id="@+id/audi"
+                    android:onClick="onClick"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
@@ -100,7 +101,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginTop="10dp"
-                            android:text="Auditoriams"
+                            android:text="Auditoriums"
                             android:textColor="#000000"
                             android:textAlignment="center"
                             android:textStyle="bold" />
@@ -110,7 +111,8 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/isc"
+                    android:id="@+id/room"
+                    android:onClick="onClick"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
@@ -137,6 +139,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="10dp"
                             android:text="Rooms"
+                            android:textColor="#000"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -147,7 +150,8 @@
 
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cbse"
+                    android:id="@+id/semi"
+                    android:onClick="onClick"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
@@ -174,6 +178,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="10dp"
                             android:text="Seminar Halls"
+                            android:textColor="#000"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -183,7 +188,8 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/advance"
+                    android:id="@+id/ground"
+                    android:onClick="onClick"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
@@ -213,6 +219,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="10dp"
                             android:text="Grounds"
+                            android:textColor="#000"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -233,19 +240,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="#2B87EB"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            />
     </LinearLayout>
 
 
